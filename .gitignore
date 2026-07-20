@@ -1,0 +1,47 @@
+# Android
+*.iml
+.gradle
+/local.properties
+local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Node / JavaScript
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment & secrets
+.env
+.env.*
+
+# Firebase (Android scaffold; not used by the web prototype under test)
+google-services.json
+firebase-debug.log
+.firebase/
+
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Test automation artifacts
+automation/logs/
+automation/reports/
+automation/screenshots/
+
+# IDE
+*.code-workspace
+.vscode/
