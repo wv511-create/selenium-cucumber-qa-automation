@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma-Yantra Share PRD</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1B4332;
+            border-bottom: 3px solid #F59E0B;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #2D6A4F;
+            margin-top: 30px;
+            border-left: 5px solid #F59E0B;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #1B4332;
+        }
+        .meta {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .feature-box {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #e5e7eb;
+        }
+        @media print {
+            body {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print" style="background: #1B4332; color: white; padding: 10px; border-radius: 5px; margin-bottom: 20px; text-align: center;">
+        💡 <strong>To save as PDF:</strong> Press <b>Ctrl + P</b> and select <b>"Save as PDF"</b>
+    </div>
+
+    <h1>Product Requirements Document (PRD)</h1>
+    <div class="meta">
+        <strong>Project:</strong> Namma-Yantra Share | <strong>Date:</strong> May 16, 2026 | <strong>Status:</strong> Final
+    </div>
+
+    <h2>1. Executive Summary</h2>
+    <p>Namma-Yantra Share is a peer-to-peer heavy machinery marketplace aimed at revolutionizing the agricultural equipment rental landscape. By connecting tractor owners with farmers, the platform optimizes machinery utilization and provides affordable access to technology for small-scale agriculture.</p>
+
+    <h2>2. Key Features</h2>
+    
+    <div class="feature-box">
+        <h3>2.1 Farmer Module</h3>
+        <ul>
+            <li><strong>Advanced Discovery:</strong> Geolocation-based browsing of tractors, harvesters, and specialized tools.</li>
+            <li><strong>Cost Efficiency:</strong> Integrated rental calculator for transparent, duration-based pricing.</li>
+            <li><strong>Secure Booking:</strong> One-tap booking request system with purpose-tracking.</li>
+        </ul>
+    </div>
+
+    <div class="feature-box">
+        <h3>2.2 Owner Module</h3>
+        <ul>
+            <li><strong>Asset Management:</strong> Comprehensive dashboard for inventory tracking and machine health.</li>
+            <li><strong>Dynamic Availability:</strong> Real-time toggle for machine status and rental rates.</li>
+            <li><strong>Analytics:</strong> Detailed earning reports and machinery performance metrics.</li>
+        </ul>
+    </div>
+
+    <h2>3. Technical Architecture</h2>
+    <ul>
+        <li><strong>Frontend:</strong> Kotlin/Jetpack Compose for high-performance Android UX.</li>
+        <li><strong>Data Layer:</strong> Firebase Cloud Firestore for real-time synchronization.</li>
+        <li><strong>Security:</strong> Firebase Authentication for role-based access control.</li>
+    </ul>
+
+    <h2>4. Success Metrics</h2>
+    <p>Success will be measured by machinery uptime, booking conversion rates, and the average distance between owners and renters (targeting < 5km for optimal logistics).</p>
+
+    <footer style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.8em; text-align: center;">
+        &copy; 2026 Namma-Yantra Share | Internal Document
+    </footer>
+</body>
+</html>
