@@ -1,0 +1,12 @@
+{
+  "name": "namma-yantra-share-web",
+  "version": "1.0.0",
+  "description": "Web prototype for Namma-Yantra Share tractor marketplace",
+  "main": "app.js",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
