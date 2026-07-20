@@ -1,0 +1,12 @@
+{
+  "name": "namma-yantra-automation",
+  "version": "1.0.0",
+  "scripts": {
+   "test": "cucumber-js features/**/*.feature --require step-definitions/**/*.js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "...",
+    "chromedriver": "...",
+    "selenium-webdriver": "..."
+  }
+}
