@@ -1,0 +1,49 @@
+name: QA Automation Pipeline
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+jobs:
+  selenium-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Setup Google Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install Automation Dependencies
+        working-directory: automation
+        run: npm install
+
+      - name: Start Web Prototype
+        working-directory: web-prototype
+        run: |
+          python -m http.server 8000 &
+          sleep 5
+
+      - name: Verify Web Server
+        run: |
+          curl http://localhost:8000
+
+      - name: Run Selenium Tests
+        working-directory: automation
+        env:
+          CI: true
+          BASE_URL: http://localhost:8000
+        run: npm test

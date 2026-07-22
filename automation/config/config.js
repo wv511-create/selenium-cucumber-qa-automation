@@ -1,5 +1,5 @@
 module.exports = {
-    baseUrl: "http://localhost:3000",
-    browser: "chrome",
-    timeout: 10000
+    baseUrl: process.env.BASE_URL || "http://localhost:8000",
+    browser: process.env.BROWSER || "chrome",
+    timeout: Number(process.env.TIMEOUT) || 10000
 };
