@@ -26,8 +26,6 @@ jobs:
 
       - name: Setup Google Chrome
         uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: "138"
 
       - name: Install Automation Dependencies
         working-directory: automation
